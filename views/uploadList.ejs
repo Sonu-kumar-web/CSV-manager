@@ -1,11 +1,11 @@
 <h1>List of Uploaded CSV Files:</h1>
 
 <ul>
-    <% for(let i of csv_list){ %>
-        <li>
-            <a href="/files/<%=i.id%>">
-                <p><%=i.originalname%></p>
-            </a>
-        </li>
-    <% } %>
+   <% for(let i of csv_list){ %>
+   <li>
+      <a href="/files/<%=i.id%>">
+         <p><%=i.originalname%></p>
+      </a>
+   </li>
+   <% } %>
 </ul>
