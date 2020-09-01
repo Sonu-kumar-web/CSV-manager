@@ -1,8 +1,8 @@
 <h1>View Csv File:</h1>
-<link rel="stylesheet" href="/css/csvDisplay.css">
+<link rel="stylesheet" href="/css/csvDisplay.css" />
 <script src="/js/csvDisplay.js"></script>
 <ul>
-    <!-- <% for(var i in data){ %>
+   <!-- <% for(var i in data){ %>
         <% var key = i;%>
         <%var val = data[i];%>
         <%for(var j in val){%>
@@ -11,33 +11,27 @@
             <p><%=sub_key%>: <%=sub_val%></p>
         <%}%>
     <%}%> -->
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-    <table id="myTable">
-
-        <% for(var i in data){ %>
-            <tr class="header">
-                <% var key = i;%>
-                <%var val = data[i];%>
-                <%for(var j in val){%>
-                    <%var sub_key = j;%>
-                    <%var sub_val = val[j];%>
-                    <th><%=sub_key%></th>
-                <%}%>
-                <%break%>
-            </tr>
-        <%}%>
-        
-        <% for(var i in data){ %>
-            <tr>
-                <% var key = i;%>
-                <%var val = data[i];%>
-                <%for(var j in val){%>
-                    <%var sub_key = j;%>
-                    <%var sub_val = val[j];%>
-                    <td><%=sub_val%></td>
-                <%}%>
-            </tr>
-        <%}%>
-    </table>
-
+   <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search for names.."
+   />
+   <table id="myTable">
+      <% for(var i in data){ %>
+      <tr class="header">
+         <% var key = i;%> <%var val = data[i];%> <%for(var j in val){%> <%var
+         sub_key = j;%> <%var sub_val = val[j];%>
+         <th><%=sub_key%></th>
+         <%}%> <%break%>
+      </tr>
+      <%}%> <% for(var i in data){ %>
+      <tr>
+         <% var key = i;%> <%var val = data[i];%> <%for(var j in val){%> <%var
+         sub_key = j;%> <%var sub_val = val[j];%>
+         <td><%=sub_val%></td>
+         <%}%>
+      </tr>
+      <%}%>
+   </table>
 </ul>
